@@ -1,0 +1,10 @@
+<button type="button" (click)="onRefresh()">Refresh</button>
+<div>
+  <ngx-masonry #ngxMasonry [updateLayout]="updateMasonryLayout">
+    <div ngxMasonryItem *ngFor="let swipeFile of swipeFiles" class="card-swipe-file">
+      <div *ngIf="swipeFile.imageUrl" class="linear-background" [ngStyle]="{'width': '300px', 'height': 300 * (swipeFile.imageHeight / swipeFile.imageWidth) + 'px'}" > 
+        <img [src]="swipeFile?.imageUrl" alt="image">
+      </div>
+    </div>
+  </ngx-masonry>
+</div>

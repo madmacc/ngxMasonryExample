@@ -1,0 +1,30 @@
+p {
+  font-family: Lato;
+}
+.card-swipe-file {
+  max-width: 330px;
+  margin: 0 20px 20px 0;
+  cursor: pointer;
+}
+.card-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+.card-content {
+  font-size: 10px;
+  color: #999;
+}
+.linear-background {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background-size: 1000px 104px;
+  height: 338px;
+  position: relative;
+  overflow: hidden;
+}
